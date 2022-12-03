@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Main {
 
+    static final int countModeQty = 3;
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -28,7 +29,7 @@ public class Main {
 
     private static void getResult(float squareSide) {
         try {
-            for (int i=1; i<=3; i++) {
+            for (int i=1; i<=countModeQty; i++) {
                 float FigureArea = getFigurePartArea(squareSide, i);
                 System.out.println(i + " Площадь части фигуры: " + FigureArea);
             }
